@@ -1,18 +1,31 @@
+@import '..'
+
+trendyL-bg = #eeeeec
+trendyL-fg = #34495e
+trendyL-fgH = #2ecc71
+
 trendyL = {
-	bg: #eeeeec,
-	fg: #34495e,
-	fgH: #2ecc71,
-	hover: @() {
-		background-color: lighten(trendyL.bg, 4)
+	extra: @() {
+		border 2px solid trendyL-fg
+		border-radius 5px
+	},
+	hover: @(){
+		background-color lighten(trendyL-bg, 4)
 	},
 	active: @(){
-		box-shadow: inset 0 2px 3px darken(trendyL.bg, 15)
+		box-shadow inset 0 2px 3px darken(trendyL-bg, 15)
 	},
 	focus: @(){
-		color: trendyL.fgH
-		border-color: trendyL.fgH
+		color trendyL-fgH
+		border-color trendyL-fgH
 	},
 	disable: @(){
-		background-color: darken(trendyL.bg, 8)
+		background-color darken(trendyL-bg, 8)
 	}
 }
+
+.trendyL
+	button(
+		trendyL-bg, trendyL-fg, trendyL.extra,
+		trendyL.hover, trendyL.active, trendyL.focus, trendyL.disable
+	)

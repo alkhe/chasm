@@ -8,6 +8,99 @@ button {
   padding: 5px 8px 6px;
   outline: none;
 }
+.trendyL {
+  padding: 50px;
+  background-color: #eeeeec;
+}
+.trendyL button {
+  background-color: #f3f3f1;
+  color: #34495e;
+  -webkit-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 2px solid #34495e;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.trendyL button:hover:not(:disabled) {
+  background-color: #f8f8f7;
+}
+.trendyL button:active {
+  -webkit-box-shadow: inset 0 2px 3px #cacac4;
+  box-shadow: inset 0 2px 3px #cacac4;
+}
+.trendyL button:focus {
+  color: #2ecc71;
+  border-color: #2ecc71;
+}
+.trendyL button:disabled {
+  background-color: #dbdbd6;
+}
+.trendyD {
+  padding: 50px;
+  background-color: #2c3e50;
+}
+.trendyD button {
+  background-color: #304357;
+  color: #1abc9c;
+  -webkit-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 2px solid #1abc9c;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.trendyD button:hover:not(:disabled) {
+  background-color: #33485d;
+}
+.trendyD button:active {
+  -webkit-box-shadow: inset 0 2px 3px #233140;
+  box-shadow: inset 0 2px 3px #233140;
+}
+.trendyD button:focus {
+  color: #57b0a1;
+  border-color: #57b0a1;
+}
+.trendyD button:disabled {
+  color: #95a5a6;
+  border-color: #95a5a6;
+}
+.cathodeD {
+  padding: 50px;
+  background-color: #2f3237;
+}
+.cathodeD button {
+  background-color: #34373d;
+  color: #9aa4a5;
+  -webkit-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 2px solid rgba(0,0,0,0);
+}
+.cathodeD button:hover:not(:disabled) {
+  background-color: #383c42;
+  border-color: #9aa4a5;
+  text-shadow: 0 0 2px #667273;
+  icon-shadow: 0 0 2px #667273;
+}
+.cathodeD button:active {
+  background-color: #2d2f34;
+  -webkit-box-shadow: inset 0 3px 4px #26282c;
+  box-shadow: inset 0 3px 4px #26282c;
+}
+.cathodeD button:focus {
+  border-color: #9aa4a5;
+}
+.cathodeD button:disabled {
+  color: #707c7e;
+  background-color: #26282c;
+}
 .gray {
   padding: 50px;
   background-color: #2f3237;
@@ -21,8 +114,6 @@ button {
   -o-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  text-shadow: 0 0 2px #363c3d;
-  icon-shadow: 0 0 2px #363c3d;
 }
 .gray button.plain:hover:not(:disabled) {
   background-color: #3d4147;
@@ -51,8 +142,6 @@ button {
   -o-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  text-shadow: 0 0 2px #124364;
-  icon-shadow: 0 0 2px #124364;
 }
 .gray button.blue:hover:not(:disabled) {
   background-color: #3a424a;
@@ -81,8 +170,6 @@ button {
   -o-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  text-shadow: 0 0 2px #124f2c;
-  icon-shadow: 0 0 2px #124f2c;
 }
 .gray button.green:hover:not(:disabled) {
   background-color: #394546;
@@ -111,8 +198,6 @@ button {
   -o-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -ms-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  text-shadow: 0 0 2px #7b190f;
-  icon-shadow: 0 0 2px #7b190f;
 }
 .gray button.red:hover:not(:disabled) {
   background-color: #423f44;
@@ -131,65 +216,4 @@ button {
 }
 .gray button.red:focus {
   border-color: #ed7669;
-}
-.contrast {
-  padding: 50px;
-  background-color: #eeeeec;
-}
-.contrast button {
-  background-color: #f3f3f1;
-  color: #34495e;
-  border: 2px solid #34495e;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -moz-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -o-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -ms-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.contrast button:hover:not(:disabled) {
-  background-color: #f8f8f7;
-}
-.contrast button:active {
-  -webkit-box-shadow: inset 0 2px 3px #cacac4;
-  box-shadow: inset 0 2px 3px #cacac4;
-}
-.contrast button:focus {
-  color: #2ecc71;
-  border-color: #2ecc71;
-}
-.contrast button:disabled {
-  background-color: #dbdbd6;
-}
-.xcontrast {
-  padding: 50px;
-  background-color: #2c3e50;
-}
-.xcontrast button {
-  background-color: #304357;
-  color: #1abc9c;
-  border: 2px solid #1abc9c;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -moz-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -o-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -ms-transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.xcontrast button:hover:not(:disabled) {
-  background-color: #33485d;
-}
-.xcontrast button:active {
-  -webkit-box-shadow: inset 0 2px 3px #233140;
-  box-shadow: inset 0 2px 3px #233140;
-}
-.xcontrast button:focus {
-  color: #57b0a1;
-  border-color: #57b0a1;
-}
-.xcontrast button:disabled {
-  color: #95a5a6;
-  border-color: #95a5a6;
 }
