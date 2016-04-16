@@ -1,0 +1,24 @@
+{
+  "name": "chasm",
+  "version": "0.0.1",
+  "description": "A nice set of customizable CSS declarations.",
+  "main": "index.js",
+  "scripts": {
+    "test": ":"
+  },
+  "keywords": [
+    "css",
+    "chasm",
+    "stylus"
+  ],
+  "author": "synchronous",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^1.2.0",
+    "gulp-stylus": "^2.3.1",
+    "nib": "^1.1.0",
+    "normalize.css": "^4.1.1",
+    "pug": "^2.0.0-alpha3"
+  }
+}
