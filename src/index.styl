@@ -1,0 +1,82 @@
+@require '../node_modules/normalize.css/normalize.css'
+@import 'nib'
+
+@import './trendy/light'
+@import './trendy/dark'
+
+*:not(i)
+	font: bold 14px 'Source Code Pro'
+
+button
+	margin-left 2px
+	margin-right 2px
+	padding 5px 8px 6px
+	outline none
+
+textglow(sh)
+	text-shadow 0 0 2px sh
+	icon-shadow 0 0 2px sh
+
+anitime(time)
+	transition all time cubic-bezier(0.25, 0.46, 0.45, 0.94)
+
+button(tc, c)
+	background-color: lighten(c, 2)
+	color: tc
+	border: 2px solid rgba(0, 0, 0, 0)
+	anitime(100ms)
+	textglow(darken(tc, 40))
+	&:hover:not(:disabled)
+		background-color: lighten(c, 4)
+		border-color: tc
+		textglow(darken(tc, 20))
+	&:active
+		background-color: darken(c, 1)
+		box-shadow: inset 0 3px 4px darken(c, 4)
+	&:disabled
+		color: darken(tc, 16)
+		background-color: darken(c, 4)
+	&:focus
+		border-color: tc
+
+.gray
+	c = #2f3237
+	tc = lighten(#7f8c8d, 10)
+	tcb = lighten(#3498db, 10)
+	tcg = lighten(#2ecc71, 10)
+	tcr = lighten(#e74c3c, 10)
+
+	padding: 50px
+	background-color: c
+	button
+		&.plain
+			button(tc, mix(c, tc, 95))
+		&.blue
+			button(tcb, mix(c, tcb, 95))
+		&.green
+			button(tcg, mix(c, tcg, 95))
+		&.red
+			button(tcr, mix(c, tcr, 95))
+
+trendyButton(bg, fg, hover, active, focus, disable)
+	padding 50px
+	background-color bg
+	button
+		background-color lighten(bg, 2)
+		color fg
+		border 2px solid fg
+		border-radius 5px
+		anitime(100ms)
+		&:hover:not(:disabled)
+			hover()
+		&:active
+			active()
+		&:focus
+			focus()
+		&:disabled
+			disable()
+
+.contrast
+	trendyButton(trendyL.bg, trendyL.fg, trendyL.hover, trendyL.active, trendyL.focus, trendyL.disable)
+.xcontrast
+	trendyButton(trendyD.bg, trendyD.fg, trendyD.hover, trendyD.active, trendyD.focus, trendyD.disable)
